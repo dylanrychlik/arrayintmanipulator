@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="intarraymanipulator.Int_manipulatorController">
+   
+    <TextArea fx:id="header" layoutX="250.0" layoutY="25.0" prefHeight = "25.0" prefWidth="350.0"  text = "Welcome to the array of int manipulator program." />       
+    <TextArea fx:id="field" layoutX="0.0" layoutY="100.0" prefHeight = "25.0" prefWidth="450.0"  text = "Please enter a number between 1 and 20 as the size of array" />
+    <TextField fx:id="input"  layoutX="100.0" layoutY="150.0" prefWidth="200.0" />
+    <Button fx:id="button" layoutX="100.0" layoutY="180.0" text="Submit"/>
+    <Button fx:id="clear" layoutX="200.0" layoutY="180.0" text="clear array"  onAction="#cleararray"/>
+    <TextArea fx:id="field2" layoutX="500.0" layoutY="100.0" prefHeight = "25.0" prefWidth="350.0"  text = "Please enter the numbers" />
+    <TextField fx:id="input2"  layoutX="400.0" layoutY="150.0" prefWidth="200.0" />
+     <TextArea fx:id="options" layoutX="100.0" layoutY="220.0" prefHeight = "70.0" prefWidth="300.0"  />   
+  
+   
+    <Button fx:id="button2" layoutX="100.0" layoutY="300.0" text="Print array" onAction="#PrintList"/>
+    <Button fx:id="sizearray" layoutX="300.0" layoutY="300.0" onAction = "#sizeofarray" /> 
+    <Button fx:id="first_element" layoutX="500.0" layoutY="300.0" text="Print first element of array" onAction = "#first_element_caller"/>
+    <Button fx:id="last_element" layoutX="700.0" layoutY="300.0" text="Print last element of array" onAction = "#last_element_caller"/>
+    
+     <Button fx:id="sum" layoutX="100.0" layoutY="400.0" text="Print sum of array" onAction="#sum_caller"/>
+    <Button fx:id="mulplication" layoutX="275.0" layoutY="400.0" text="Print the product of the array" onAction="#product_caller" />
+    <Button fx:id="mean" layoutX="500.0" layoutY="400.0" text="Print mean of array" onAction="#mean_caller"/>
+    <Button fx:id="Median" layoutX="700.0" layoutY="400.0" text="Print mediam of array" onAction="#medium_caller" />
+    
+   <Button fx:id="sort" layoutX="100.0" layoutY="500.0" text="Sort array"  onAction="#sort_caller"/>
+    <Button fx:id="largest" layoutX="300.0" layoutY="500.0" text="Print Largest element" onAction = "#largest_element_caller"/>
+    <Button fx:id="smallest" layoutX="500.0" layoutY="500.0" text="Print smallest element" onAction = "#smallest_element_caller"/>
+    <Button fx:id="reverse" layoutX="700.0" layoutY="500.0" text="Print the array reversed" onAction = "#reversearray"/>
+
+     <Button fx:id="duplicate" layoutX="100.0" layoutY="600.0" text="Print array's duplicates" onAction = "#duplicatearray"/>
+    <Button fx:id="EEFL" layoutX="300.0" layoutY="600.0"   onAction = "#EEFLE"/>
+    <Button fx:id="odd" layoutX="500.0" layoutY="600.0" text="Print array's odd numbers" onAction = "#odd" />
+    <Button fx:id="even" layoutX="700.0" layoutY="600.0" text="Print  array's even numbers" onAction = "#even" />
+      
+      
+      
+    <TextArea fx:id="output" layoutX="100.0" layoutY="750.0" prefHeight = "200.0" prefWidth="800.0" />
+          
+</AnchorPane>
